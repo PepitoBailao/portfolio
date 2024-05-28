@@ -1,0 +1,105 @@
+/* GENERAL */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  color: rgb(85, 85, 85);
+}
+
+img {
+  border-radius: 15%;
+}
+
+/* DESKTOP NAV */
+
+nav,
+.nav-liens {
+  display: flex;
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 120px;
+}
+
+.nav-liens {
+  gap: 20px;
+  list-style: none;
+  font-size: 30px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  text-decoration-color: white;
+}
+
+a:hover {
+  color: grey;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(181, 181, 181);
+}
+
+.logo {
+  font-size: 30px;
+}
+
+.logo:hover {
+  cursor: default;
+}
+
+
+
+
+/* SECTIONS */
+
+section {
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+  }
+  
+  .section-container {
+    display: flex;
+  }
+
+
+/* ICONS */
+
+.icon {
+    cursor: pointer;
+    height: 2rem;
+  }
+
+/* FOOTER SECTION */
+footer p {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+/*scroolbar*/
+::-webkit-scrollbar {
+  width: 15px;
+  height: 15px;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: yellow black; 
+}
+
+
