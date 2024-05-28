@@ -98,7 +98,7 @@ footer p {
 }
 
 * {
-  scrollbar-width: thin;
+  scrollbar-size: auto ;
   scrollbar-color: yellow black; 
 }
 
