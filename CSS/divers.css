@@ -1,0 +1,68 @@
+/* EXPERIENCE SECTION */
+
+#experience {
+    position: relative;
+}
+
+.titre {
+    font-size: 50px;
+}
+
+.untitre {
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sectionss {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.article-container {
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
+}
+
+article {
+    display: flex;
+    width: 15rem;
+    justify-content: space-around;
+    gap: 0.5rem;
+}
+
+article .icon {
+    cursor: default;
+}
+
+article .image {
+    width: 1;
+}
+
+.icondivers {
+    cursor: pointer;
+    height: 10rem;
+}
+
+.jsp, .jsp2, .jsp3 {
+    padding: 1rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+}

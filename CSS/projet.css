@@ -32,7 +32,7 @@
   
 #projets-s1 {
     position: relative;
-    margin-bottom: 450px;
+    margin-bottom: 420px;
     margin-left: 75px;
     margin-right: 75px;
   }
@@ -54,7 +54,7 @@
 }
 
 
-.hidden {
+.hidden{
     display: none;
 }
 
@@ -70,7 +70,7 @@
 }
 
 body {
-  margin-bottom: 500px;
+  margin-bottom: 10px;
 }
 
 .us{
@@ -79,4 +79,32 @@ body {
 
 h3{
   text-align: center;
+}
+
+.bouttonProj {
+  color: black;
+  border-color: rgb(163, 163, 163);
+}
+
+#projets-s2 {
+  position: relative;
+  margin-bottom: 200px;
+  margin-left: 75px;
+  margin-right: 75px;
+}
+
+.color-container {
+  border-color: rgb(163, 163, 163);
+  background: rgb(250, 250, 250);
+}
+
+.project-img {
+  border-radius: 2rem;
+  width: 90%;
+  height: 90%;
+}
+
+.titre {
+  margin: 10px;
+  color: black;
 }
