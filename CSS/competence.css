@@ -37,3 +37,17 @@
     cursor: default;
   }
   
+
+  /*fun*/
+  @keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+  }
+  
+  img {
+    animation: rotation 2s infinite linear; /* Ajout de l'animation ici */
+  }
