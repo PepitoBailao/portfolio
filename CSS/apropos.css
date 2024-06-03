@@ -1,5 +1,3 @@
-/* ABOUT SECTION */
-
 .sectionss {
     gap: 20px;
     margin-bottom: 20px;
@@ -17,25 +15,25 @@
   }
   
   .jsp {
-    padding: 1.5rem;
+    padding: 24px;
     flex: 1;
     background: white;
-    border-radius: 2rem;
-    border: rgb(53, 53, 53) 0.1rem solid;
+    border-radius: 32px;
+    border: rgb(53, 53, 53) 1.6px solid;
     border-color: rgb(163, 163, 163);
     text-align: center;
   }
   
   .section-container {
-    gap: 4rem;
+    gap: 64px;
     height: 80%;
   }
 
   #profil {
     display: flex;
     justify-content: center;
-    gap: 5rem;
-    height: 80vh;
+    gap: 80px;
+    height: 700px;
   }
   
   .image {
@@ -59,7 +57,7 @@
   }
   
   .p2txt {
-    font-size: 1.75rem;
+    font-size: 28px;
     margin-bottom: 10px;
   }
   

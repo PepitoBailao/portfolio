@@ -1,7 +1,7 @@
 .sectionss {
-    gap: 2rem;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+    gap: 32px;
+    margin-bottom: 32px;
+    margin-top: 32px;
   }
   
 .sections {
@@ -15,11 +15,11 @@
   }
   
 .jsp {
-    padding: 1.5rem;
+    padding: 24px;
     flex: 1;
     background: white;
     border-radius: 20px;
-    border: rgb(53, 53, 53) 0.1rem solid;
+    border: rgb(53, 53, 53) 1.6px solid;
     border-color: rgb(163, 163, 163);
     text-align: left;
   }
@@ -43,7 +43,7 @@
   }
   
 .project-img {
-    border-radius: 2rem;
+    border-radius: 32px;
     width: 90%;
     height: 90%;
 }
@@ -99,7 +99,7 @@ h3{
 }
 
 .project-img {
-  border-radius: 2rem;
+  border-radius: 32px;
   width: 90%;
   height: 90%;
 }

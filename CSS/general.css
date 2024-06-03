@@ -14,6 +14,7 @@ html {
 
 p {
   color: rgb(85, 85, 85);
+  font-size:18px;
 }
 
 img {
@@ -24,6 +25,9 @@ img {
   font-size: 40px;
 }
 
+h3 {
+  font-size: 30px;
+}
 /* DESKTOP NAV */
 
 nav,
@@ -52,7 +56,7 @@ a {
 a:hover {
   color: grey;
   text-decoration: underline;
-  text-underline-offset: 1rem;
+  text-underline-offset: 16px;
   text-decoration-color: rgb(181, 181, 181);
 }
 
@@ -68,9 +72,9 @@ a:hover {
 /* SECTIONS */
 
 section {
-    padding-top: 4vh;
-    height: 96vh;
-    margin: 0 10rem;
+    padding-top: 43.2px;
+    height: 1000px;
+    margin: 0 100px;
     box-sizing: border-box;
     min-height: fit-content;
   }
@@ -99,9 +103,9 @@ footer p {
 
 
 .sectionss {
-  gap: 2rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+  gap: 32px;
+  margin-bottom: 32px;
+  margin-top: 32px;
 }
 
 .sections {
@@ -115,23 +119,23 @@ footer p {
 }
 
 .jsp {
-  padding: 1.5rem;
+  padding: 24px;
   flex: 1;
   background: white;
-  border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
+  border-radius: 32px;
+  border: rgb(53, 53, 53) 1.6px solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
 }
 
 .section-container {
-  gap: 4rem;
+  gap: 64px;
   height: 80%;
 }
 
 .icon {
   cursor: pointer;
-  height: 3rem;
+  height: 48px;
 }
 
 /**/

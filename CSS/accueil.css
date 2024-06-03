@@ -3,8 +3,8 @@
 #profil {
   display: flex;
   justify-content: center;
-  gap: 5rem;
-  height: 80vh;
+  gap: 80px;
+  height: 500px;
 }
 
 .image {
@@ -28,12 +28,12 @@
 }
 
 .p2txt {
-  font-size: 1.75rem;
-  margin-bottom: 1rem;
+  font-size: 28px;
+  margin-bottom: 16px;
 }
 
 .titre {
-  font-size: 3rem;
+  font-size: 48px;
   text-align: center;
 }
 
@@ -50,26 +50,26 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 70vh;
+  height: 756px;
 }
 
 .contact-info-upper-container {
   display: flex;
   justify-content: center;
-  border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
+  border-radius: 32px;
+  border: rgb(53, 53, 53) 1.6px solid;
   border-color: rgb(163, 163, 163);
   background: (250, 250, 250);
-  margin: 2rem auto;
-  padding: 0.5rem;
+  margin: 32px auto;
+  padding: 8px;
 }
 
 .contact-info-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
-  margin: 1rem;
+  gap: 8px;
+  margin: 16px;
 }
 
 .contact-info-container p {
@@ -81,7 +81,7 @@
 }
 
 .email-icon {
-  height: 2.5rem;
+  height: 40px;
 }
 
 /* BUTTONS */
@@ -89,20 +89,20 @@
 .bouttonhaut {
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap: 16px;
 }
 
 .boutton {
   font-weight: 600;
   transition: all 300ms ease;
-  padding: 1rem;
-  width: 8rem;
-  border-radius: 2rem;
+  padding: 16px;
+  width: 128px;
+  border-radius: 32px;
 }
 
 .bcouleur1,
 .bcouleur2 {
-  border: rgb(53, 53, 53) 0.1rem solid;
+  border: rgb(53, 53, 53) 1.6px solid;
 }
 
 .bcouleur1:hover,
@@ -125,9 +125,9 @@
 }
 
 .bcouleur2:hover {
-  border: rgb(255, 255, 255) 0.1rem solid;
+  border: rgb(255, 255, 255) 1.6px solid;
 }
 
 .bouttonhaut {
-  gap: 1rem;
+  gap: 16px;
 }
