@@ -1,17 +1,16 @@
-document.querySelectorAll('img').forEach(function(img) {
-  var audio = new Audio(img.dataset.audio);
+document.querySelectorAll('.iconmusiques').forEach(function(iconmusiques) {
+  var audio = new Audio(iconmusiques.dataset.audio);
 
-  img.addEventListener('click', function() {
+  iconmusiques.addEventListener('click', function() {
     if (!audio.paused) {
       audio.pause();
-      this.classList.remove('rotate-right');
+      this.classList.remove('rotating');
     } else {
       audio.play();
-      this.classList.add('rotate-right');
+      this.classList.add('rotating');
     }
   });
 });
-
 
 document.querySelectorAll('.logo').forEach(function(logo) {
   var audio = new Audio('musique/prout.mp3');

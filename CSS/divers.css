@@ -4,10 +4,6 @@
     position: relative;
 }
 
-.titre {
-    font-size: 50px;
-}
-
 .untitre {
     color: rgb(85, 85, 85);
     font-weight: 600;
@@ -57,6 +53,11 @@ article .image {
     height: 10rem;
 }
 
+.iconmusiques{
+    cursor: pointer;
+    height: 10rem;
+}
+
 .jsp, .jsp2, .jsp3 {
     padding: 1rem;
     flex: 1;
@@ -71,15 +72,15 @@ article .image {
 
 /**/
 
-.rotate-right {
+.rotating {
     animation: rotation 2s infinite linear;
-  }
-  
-  @keyframes rotation {
+}
+
+@keyframes rotation {
     from {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
     to {
-      transform: rotate(359deg);
+        transform: rotate(359deg);
     }
-  }
+}

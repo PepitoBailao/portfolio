@@ -20,6 +20,10 @@ img {
   border-radius: 15%;
 }
 
+.titre {
+  font-size: 40px;
+}
+
 /* DESKTOP NAV */
 
 nav,
@@ -53,7 +57,8 @@ a:hover {
 }
 
 .logo {
-  font-size: 30px;
+  font-size: 40px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .logo:hover {
