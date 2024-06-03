@@ -15,7 +15,7 @@ Ce portfolio est ma propriété intellectuelle. Toute copie, reproduction ou uti
 ## Languages utilisés
 - HTML
 - CSS
-- (JavaScript) -> Futur
+- JavaScript
 
 Merci de visiter mon portfolio !
 
