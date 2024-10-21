@@ -29,3 +29,14 @@ function toggleMoreContent(button) {
       moreContent.classList.add('hidden');
   }
 }
+
+// script.js
+const image = document.getElementById("img");
+
+image.addEventListener("click", function() {
+    if (image.style.filter === "blur(0px)") {
+        image.style.filter = "blur(10px)";
+    } else {
+        image.style.filter = "blur(0px)";
+    }
+});
