@@ -39,4 +39,13 @@ image.addEventListener("click", function() {
     } else {
         image.style.filter = "blur(0px)";
     }
-});
+})
+
+function toggleMoreContent(button) {
+  let content = button.nextElementSibling;
+  if (content.style.display === "none" || content.style.display === "") {
+      content.style.display = "block";
+  } else {
+      content.style.display = "none";
+  }
+};

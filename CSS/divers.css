@@ -1,16 +1,13 @@
 /* EXPERIENCE SECTION */
-
 #experience {
     position: relative;
 }
-
 .imagesss {
     display: flex;
     height: 400px;
     width: 400px;
     margin: auto;
 }
-
 .imagesss img {
     width: 100%;
     height: 100%;
@@ -18,7 +15,6 @@
     transition: filter 0.3s ease;
     cursor: pointer;
 }
-
 .untitre {
     color: rgb(85, 85, 85);
     font-weight: 600;
@@ -26,19 +22,16 @@
     margin-bottom: 32px;
     text-align: center;
 }
-
 .info {
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
-
 .sectionss {
     display: flex;
     justify-content: space-between;
     gap: 32px;
 }
-
 .article-container {
     display: flex;
     text-align: initial;
@@ -47,35 +40,27 @@
     gap: 40px;
     justify-content: space-around;
 }
-
 article {
     display: flex;
     width: 240px;
     justify-content: space-around;
     gap: 8px;
 }
-
 article .icon {
     cursor: default;
 }
-
 article .image {
     width: 1;
 }
-
 .icondivers {
     cursor: pointer;
     height: 160px;
 }
-
 .iconmusiques {
     cursor: pointer;
     height: 160px;
 }
-
-.jsp,
-.jsp2,
-.jsp3 {
+.jsp, .jsp2, .jsp3 {
     padding: 16px;
     flex: 1;
     background: white;
@@ -85,20 +70,15 @@ article .image {
     text-align: center;
     margin-bottom: 100px;
 }
-
-
 /**/
-
 .rotating {
     animation: rotation 2s infinite linear;
 }
-
 @keyframes rotation {
     from {
         transform: rotate(0deg);
-    }
-
+   }
     to {
         transform: rotate(359deg);
-    }
+   }
 }
