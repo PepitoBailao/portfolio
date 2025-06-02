@@ -4,8 +4,7 @@ Portfolio personnel d'un étudiant en BUT Réseaux et Télécommunications.
 
 ## Site
 
-[Site web présentant mes projets académiques, compétences techniques et expériences professionnelles.
-](https://pepitobailao.github.io/portfolio/#)
+https://pepitobailao.github.io/portfolio/#
 
 ## Structure
 
