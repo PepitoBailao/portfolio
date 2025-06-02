@@ -2,19 +2,27 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <title>Accueil</title>
-    <link rel="shortcut icon" href="image/icon.gif" />
-    <link rel="stylesheet" href="CSS/accueil.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio d'Ulysse Richard, étudiant en B.U.T. Réseaux et Télécommunications" />
+    <title>Accueil | Ulysse Richard</title>
+    <link rel="shortcut icon" href="image/logo.gif" />
     <link rel="stylesheet" href="CSS/general.css" />
+    <link rel="stylesheet" href="CSS/accueil.css" />
+    <link rel="stylesheet" href="CSS/responsive.css" />
   </head>
   <body>
     <nav id="onglets">
       <div class="logo">RICHARD Ulysse</div>
-      <div>
+      <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-container">
         <ul class="nav-liens">
-          <li><a href="index english.html">🇬🇧</a></li>
-          <li><a href="apropos.html">A propos</a></li>
-          <li><a href="experience.html">Experience</a></li>
+          <li><a href="index.html" aria-current="page">Accueil</a></li>
+          <li><a href="apropos.html">À propos</a></li>
+          <li><a href="experience.html">Expérience</a></li>
           <li><a href="competence.html">Compétences</a></li>
           <li><a href="projet.html">Projets</a></li>
           <li><a href="divers.html">Divers</a></li>
@@ -25,45 +33,44 @@
     
     <section id="profil">
       <div class="imagesss">
-          <img src="image/moi.jpg" id="img" />
+        <img src="image/moi.webp" id="img" alt="Photo de profil d'Ulysse Richard" loading="lazy" />
       </div>
-  
       <div class="texte">
-          <h1 class="titre">Ulysse RICHARD</h1>
-          <p class="p2txt">Étudiant en deuxième année de Bachelor Universitaire Technologique Réseaux et Télécommunications</p>
-          <div class="bouttonhaut">
-              <button
-                class="boutton bcouleur2"
-                onclick="window.open('./doc/CV - Ulysse RICHARD.pdf')">CV
-              </button>
-              <button class="boutton bcouleur1" onclick="location.href='#contact'">Contact</button>
-          </div>
+        <h1 class="titre">Ulysse RICHARD</h1>
+        <p class="p2txt">Étudiant en deuxième année de Bachelor Universitaire Technologique Réseaux et Télécommunications</p>
+        <div class="bouttonhaut">
+          <button class="boutton bcouleur2" onclick="window.open('./doc/CV - Ulysse RICHARD.pdf')">
+            CV
+          </button>
+          <button class="boutton bcouleur1" onclick="location.href='#contact'">
+            Contact
+          </button>
+        </div>
       </div>
-  </section>
-  
-
+    </section>
 
     <section id="contact">
-        <h1 class="titre">Contact</h1>
-        <div class="contact-info-upper-container">
-          <div class="contact-info-container">
-            <img src="image/email.png" class="icon contact-icon email-icon"/>
-            <p><a href="mailto:ulysse.richard@etu.uca.fr">ulysse.richard@etu.uca.fr</a></p>
-          </div>
-          <div class="contact-info-container">
-            <img src="image/linkedin.png" class="icon contact-icon"/>
-            <p><a href="https://www.linkedin.com/in/ulysse-richard/">LinkedIn</a></p>
-          </div>
-          <div class="contact-info-container">
-            <img src="image/github.png" class="icon"/>
-            <p><a href="https://github.com/PepitoBailao">Github</a></p>
+      <h2 class="titre">Contact</h2>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="image/email.png" class="icon contact-icon email-icon" alt="Icône email" />
+          <p><a href="mailto:ulysse.richard@etu.uca.fr">ulysse.richard@etu.uca.fr</a></p>
         </div>
-      </section>
-      <footer>
-        <p>© Ulysse RICHARD</p>
-      </footer>
-    </body>
-  </html>
-  
+        <div class="contact-info-container">
+          <img src="image/linkedin.png" class="icon contact-icon" alt="Icône LinkedIn" />
+          <p><a href="https://www.linkedin.com/in/ulysse-richard/" target="_blank" rel="noopener">LinkedIn</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="image/github.webp" class="icon" alt="Icône GitHub" />
+          <p><a href="https://github.com/PepitoBailao" target="_blank" rel="noopener">GitHub</a></p>
+        </div>
+      </div>
+    </section>
 
-  <script src="script.js"></script>
+    <footer>
+      <p>© Ulysse RICHARD</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
