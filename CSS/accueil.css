@@ -280,37 +280,27 @@ h1::after {
 }
 
 @media (max-width: 480px) {
-  .imagesss {
-    height: clamp(180px, 45vw, 240px);
-    width: clamp(200px, 55vw, 280px);
+  #contact {
+    padding: 1.5rem 0.5rem;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
   }
-  
-  .titre {
-    font-size: clamp(2rem, 8vw, 2.5rem);
+  .contact-info-upper-container {
+    flex-direction: column;
+    align-items: stretch;
+    padding: var(--spacing-sm);
+    margin: var(--spacing-md) auto;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
   }
-  
-  .p2txt {
-    font-size: clamp(1.25rem, 5vw, 1.5rem);
-  }
-  
-  #social {
-    gap: var(--spacing-md);
-  }
-  
-  #social .icon {
-    width: 2rem;
-    height: 2rem;
-  }
-  
   .contact-info-container {
     flex-direction: column;
     gap: var(--spacing-xs);
     margin: var(--spacing-sm);
-  }
-  
-  .email-icon {
-    height: 2rem;
-    width: 2rem;
+    width: 100%;
+    box-sizing: border-box;
   }
 }
 
