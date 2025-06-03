@@ -1,428 +1,611 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Projets</title>
-    <link rel="shortcut icon" href="image/icon1.gif" />
-    <link rel="stylesheet" href="CSS/projet.css" />
-    <link rel="stylesheet" href="CSS/general.css"/>
-  </head>
-  <body>
-    <nav id="onglets">
-      <div class="logo">RICHARD Ulysse</div>
-      <div>
-        <ul class="nav-liens">
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="apropos.html">A propos</a></li>
-          <li><a href="experience.html">Experience</a></li>
-          <li><a href="competence.html">Compétences</a></li>
-          <li><a href="divers.html">Divers</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets - Ulysse RICHARD</title>
+    <meta name="description" content="Découvrez mes projets académiques et personnels en développement web, réseaux et télécommunications">
+    <link rel="shortcut icon" href="image/logo.gif">
+    <link rel="stylesheet" href="CSS/general.css">
+    <link rel="stylesheet" href="CSS/projet.css">
+    <link rel="preload" href="CSS/general.css" as="style">
+    <link rel="preload" href="CSS/projet.css" as="style">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="onglets" role="navigation" aria-label="Menu principal">
+        <div class="logo">RICHARD Ulysse</div>
+        <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="nav-container">
+            <ul class="nav-liens">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+                <li><a href="experience.html">Expérience</a></li>
+                <li><a href="competence.html">Compétences</a></li>
+                <li><a href="projet.html" aria-current="page">Projets</a></li>
+                <li><a href="divers.html">Divers</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 
-<!-- SEMESTRE 1 -->
+    <main>
+        <!-- Hero Section -->
+        <header class="page-header">
+            <h1>Mes Projets</h1>
+        </header>
 
-<!-- Projet 1 - telecom -->
-    <section id="projets-s1">
-      <h1 class="titre">Projets Semestre 1</h1>
-      <div class="info">
-        <div class="sectionss">
-          <div class="jsp color-container">
-            <div class="article-container">
-              <img src="image/telecom.png" class="project-img"/>
-            </div>
-            <h2 class="us">Télécommunications</h2><br>
-              <h3>Caractérisation de fibres optiques en photométrie</h3><br>
-              <p>
-                <strong>Contexte :</strong>
-                Dans le cadre du parcours BUT1 Réseaux et Télécommunications, j'ai réalisé le travail pratique n°5 lié aux propriétés des fibres optiques en photométrie.
-              </p>
-              <br>
-              <p>
-                <strong>Objectif :</strong>
-                Acquérir et restituer un signal en utilisant les conversions analogique-numérique (CAN) et numérique-analogique (CNA).
-              </p><br>
-              <p>
-                <strong>Résultat :</strong><br>
-                Note : 13/20 <br> La moyenne n'a pas été donnée.
-              </p>
-              <br><br>
-              <div>
-                <button class="show-more-button" onclick="toggleMoreContent(this)">Voir plus</button>
-                <div class="hidden show-more-content">
-                    <p class="p1960">Missions :
-                      <li>Réalisation du montage avec fibre optique (1310 nm)</li>
-                      <li>Configuration du réflectomètre (MT9083A) et du photomètre (JDSU)</li>
-                      <li>Intégration d’une fibre à tester dans le montage</li>
-                      <li>Calcul de l’atténuation en watt et en dB</li>
-                      <li>Codage en Binaire Décalé et Complément à 2</li>
-                      <li>Mesures à 1550 nm et comparaison des résultats</li>
-                      <li>Analyse des résultats pour les fibres directe et inversée</li>
-                    </p>
-                </div>
-              </div>
-          </div>
-
-
-<!-- Projet 2 - sae11 -->
-          <div class="jsp color-container">
-            <div class="article-container">
-              <img src="image/phishing.jpg" alt="reseau" class="project-img"/>
-            </div>
-            <br>
-            <h2 class="us"> SAE11 - Se sensibiliser à l'hygiène info et à la cybersécurité</h2><br>
-            <h3></h3>
-              <p>
-                <strong>Contexte :</strong>
-                Travail pratique en binôme, réalisé pendant une séance de 3 heures.
-              </p><br>
-              <p>
-                <strong>Objectif :</strong>
-                Implémenter la translation d’adresse avec iptables sous Linux.</p>
-              <br>
-              </p>
-              <p>
-                <strong>Résultat :</strong><br>
-                Note : 12.80/20 <br> Moyenne de classe: 11.89/20
-              </p>
-              <div>
-                <button class="show-more-button" onclick="toggleMoreContent(this)">Voir plus</button>
-                <div class="hidden show-more-content">
-                    <p>Missions :</p>
-                    <li>Expliquer le NAT et le PAT mais aussi présenter Iptables</li>
-                    <li>Activation de l’ip forwarding</li>
-                    <li>Communication avec le routeur</li>
-                    <li>Configuration du NAT</li>
-                    <li>Capture Wireshark</li>
-                    <li>Installation de serveurs Web et FTP</li>
-                    <li>Accès au site internet et serveur FTP</li>
-                    <li>Observation du réseau avec Wireshark</li>
-                    <li>Configuration de ping entre deux PC</li>
-                </div>
-              </div>
-            </div>
-
-<!-- Projet 3 -  -->
-          <div class="jsp color-container">
-            <div class="article-container">
-              <img src="image/html.png" alt="3" class="project-img"/>
-            </div>
-            <h2 class="us">Programmation - Portfolio</h2><br>
-            <h3>Développer un site web en HTML et CSS</h3><br>
-            <p>
-              <strong>Contexte :</strong>
-              Projet de développement web réalisé individuellement, mettant en œuvre les langages de base HTML (Hypertext Markup Language) et CSS (Cascading Style Sheets) pour la structure et le design des pages Web.            </p><br>
-            <p>
-              <strong>Objectif :</strong>
-              Développer un site web en utilisant HTML pour le contenu et CSS pour la mise en forme et le design.
-            </p><br>
-            <p>
-              <strong>Résultat :</strong><br>
-              Note : 15/20 <br> Moyenne : 12.30/20
-            </p>
-              <br>
-              <div>
-                <button class="show-more-button" onclick="toggleMoreContent(this)">Voir plus</button>
-                <div class="hidden show-more-content">
-                    <p>Mission :</p>
-                      <li>Construction du contenu en HTML</li>
-                      <li>Mise en place de la structure du site</li>
-                      <li>Intégration des informations nécessaires dans le site</li>
-                      <li>Utilisation de CSS pour la conception et la mise en page</li>
-                      <li>Amélioration de l'apparence visuelle du site</li>
-            </div>
-          </div>
-        </div>
-        </div>
-      </div>
-    </section>
-
-
-<!-- SEMESTRE 2 -->
-
-
-<!-- Projet 1 - Telecoms -->
-    <section id="projets-s2">
-        <h1 class="titre">Projets Semestre 2</h1>
-        <div class="info">
-          <div class="sectionss">
-            <div class="jsp color-container">
-              <div class="article-container">
-                <img src="image/telecom2.png" class="project-img"/>
-              </div>
-              <h2 class="us">Télécommunications</h2><br>
-                <h3>Mise en place d’un signal analogique-numérique (CAN) et restitution numérique-analogique (CNA)</h3><br>
-                <p>
-                  <strong>Contexte :</strong>
-                  Travail pratique en binôme suivant les consignes du professeur, réalisé en une séance de TP.
-                </p>
-                <br>
-                <p>
-                  <strong>Objectif :</strong>
-                  Acquérir et restituer un signal en utilisant les conversions analogique-numérique (CAN) et numérique-analogique (CNA).
-                </p><br>
-                <p>
-                  <strong>Résultat :</strong>
-                  En attente de notation
-                </p>
-                <div>
-                  <button class="show-more-button" onclick="toggleMoreContent(this)">Voir plus</button>
-                  <div class="hidden show-more-content">
-                      <p class="p1960">Missions :
-                        <li>Téléchargement et exécution du fichier “TP5 CAN et CNA”</li>
-                        <li>Mise en œuvre et génération d'un signal continu à 2.04V.</li>
-                        <li>Étude du codage avec Bit de Signe</li>
-                        <li>Conversion de signal et débit</li>
-                        <li>Codage en Binaire Décalé et Complément à 2</li>
-                        <li>Modification de la résolution du CAN </li>
-                        <li>Transmission avec Multiplexage Temporel</li>
-                        <li>Restitution du signal en réception</li>
-                      </p>
-                  </div>
+        <!-- Semestre 1 -->
+        <section id="projets-s1" aria-labelledby="titre-s1">
+            <div class="section-header">
+                <div class="title-wrapper">
+                    <h2 id="titre-s1" class="titre">Projets Semestre 1</h2>
                 </div>
             </div>
 
+            <div class="sections">
+                <div class="sectionss">
+                    <!-- Projet Télécommunications -->
+                    <article class="jsp">
+                        <div class="color-container">
+                            <img src="image/telecom.webp" alt="Fibres optiques et équipements de télécommunications" class="project-img" loading="lazy">
+                        </div>
+                        
+                        <div class="project-content">
+                            <span class="project-type">Télécommunications</span>
+                            <h3>Caractérisation de fibres optiques en photométrie</h3>
+                            
+                            <div class="project-details">
+                                <p><strong>Contexte :</strong> Travail pratique n°5 du parcours BUT1 Réseaux et Télécommunications, portant sur les propriétés des fibres optiques.</p>
+                                
+                                <p><strong>Objectif :</strong> Acquérir et restituer un signal en utilisant les conversions analogique-numérique (CAN) et numérique-analogique (CNA).</p>
+                                
+                                <p><strong>Résultat :</strong> Note obtenue : 13/20</p>
+                            </div>
 
-<!-- Projet 2 - SAE21 -->
-            <div class="jsp color-container">
-              <div class="article-container">
-                <img src="image/sae21.png" alt="reseau" class="project-img"/>
-              </div>
-              <br>
-              <h2 class="us">Réseaux - SAE21</h2><br>
-              <h3>Mise en place de la fonctionnalité de translation d’adresse avec iptables sous Linux</h3><br>
-                <p>
-                  <strong>Contexte :</strong>
-                  Travail pratique en binôme, réalisé pendant une séance de 3 heures.
-                </p><br>
-                <p>
-                  <strong>Objectif :</strong>
-                  Implémenter la translation d’adresse avec iptables sous Linux.</p>
-                <br>
-                </p>
-                <p>
-                  <strong>Résultat :</strong>
-                  En attente de notation
-                </p>
-                <div>
-                  <button class="show-more-button" onclick="toggleMoreContent(this)">Voir plus</button>
-                  <div class="hidden show-more-content">
-                      <p>Missions :</p>
-                      <li>Expliquer le NAT et le PAT mais aussi présenter Iptables</li>
-                      <li>Activation de l’ip forwarding</li>
-                      <li>Communication avec le routeur</li>
-                      <li>Configuration du NAT</li>
-                      <li>Capture Wireshark</li>
-                      <li>Installation de serveurs Web et FTP</li>
-                      <li>Accès au site internet et serveur FTP</li>
-                      <li>Observation du réseau avec Wireshark</li>
-                      <li>Configuration de ping entre deux PC</li>
-                  </div>
-              </div>
-            </div>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Fibres optiques</span>
+                                <span class="tech-tag">Photométrie</span>
+                                <span class="tech-tag">CAN/CNA</span>
+                                <span class="tech-tag">Réflectomètre</span>
+                            </div>
 
-<!-- Projet 3 - PROG WEB -->
-            <div class="jsp color-container">
-              <div class="article-container">
-                <img src="image/memo.png" alt="3" class="project-img"/>
-              </div>
-              <h2 class="us">Programmation - WEB</h2><br>
-              <h3>Développer un jeu de mémoire en ligne à l'aide des langages html, css et php</h3><br>
-              <p>
-                <strong>Contexte :</strong>
-                Travail pratique, réalisé en quatre séances et découpé en deux grandes parties
-              </p><br>
-              <p>
-                <strong>Objectif :</strong>
-                Apprendre et comprendre le language PHP
-              </p><br>
-              <p>
-                <strong>Résultat :</strong>
-                En attente de notation
-              </p>
-                <br><br>
-                <div>
-                  <button class="show-more-button" onclick="toggleMoreContent(this)">Voir plus</button>
-                  <div class="hidden show-more-content">
-                      <p>Mission :</p>
-                        <li>Générer un plateau de jeu</li>
-                        <li>Charger et récupérer les émoticônes</li>
-                        <li>Afficher un plateau de jeu</li>
-                        <li>Récupérer le ou les derniers choix</li>
-                        <li>Récupérer la liste des émoticônes</li>
-                        <li>Mettre à jour l'affichage du plateau de jeu</li>
-                        <li>Retourner les deux premières cartes choisies</li>
-                        <li>Gestion d'une paire de cartes retournées identique</li>
-                        <li>Modifications finales pour continuer et terminer le jeu</li>
-                  </div>
-              </div>
-            </div>
+                            <button class="show-more-button" onclick="toggleMoreContent(this)" aria-expanded="false">
+                                Voir plus
+                            </button>
+                            
+                            <div class="show-more-content" aria-hidden="true">
+                                <h4>Missions réalisées :</h4>
+                                <ul>
+                                    <li>Réalisation du montage avec fibre optique (1310 nm)</li>
+                                    <li>Configuration du réflectomètre (MT9083A) et du photomètre (JDSU)</li>
+                                    <li>Intégration d'une fibre à tester dans le montage</li>
+                                    <li>Calcul de l'atténuation en watt et en dB</li>
+                                    <li>Codage en Binaire Décalé et Complément à 2</li>
+                                    <li>Mesures à 1550 nm et comparaison des résultats</li>
+                                    <li>Analyse des résultats pour les fibres directe et inversée</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
 
-            <!-- Projet 4 - PROJET INTEGRATIF -->
-            <div class="jsp color-container">
-              <div class="article-container">
-                <img src="image/sae24.png" alt="3" class="project-img"/>
-              </div>
-              <h2 class="us">Projet Intégratif - SAE24</h2><br>
-              <h3>Concevoir une infrastructure réseau pour une petite entreprise</h3><br>
-              <p>
-                <strong>Contexte :</strong>
-                Travail en groupe de 4 étudiants sur deux semaines, réalisé en séances de TP.
-              </p><br>
-              <p>
-                <strong>Objectif :</strong>
-                Mettre en place une infrastructure réseau avec plusieurs services et des mesures de sécurité pour le service DHCP.
-              </p><br>
-              <p>
-                <strong>Résultat :</strong>
-                En cours
-              </p>
-                <br>
-                <div>
-                  <button class="show-more-button" onclick="toggleMoreContent(this)">Voir plus</button>
-                  <div class="hidden show-more-content">
-                      <p>Mission :</p>
-                        <li>Configuration de VLAN et d'un switch</li>
-                        <li>Mise en place du Wifi et d'un routeur de périphérie</li>
-                        <li>Installation de serveurs Windows (Active Directory) et Linux</li>
-                        <li>Mise en place d'un serveur téléphonique</li>
-                        <li>Installation d'un serveur web</li>
-                        <li>Configuration du DHCP avec suivi des logs et protection contre les attaques (DHCP spoofing, DHCP starvation)</li>
-                  </div>
-              </div>
-            </div>
-        </div>
+                    <!-- Projet SAE11 -->
+                    <article class="jsp">
+                        <div class="color-container">
+                            <img src="image/phishing.webp" alt="Sécurité informatique et cybersécurité" class="project-img" loading="lazy">
+                        </div>
+                        
+                        <div class="project-content">
+                            <span class="project-type">Cybersécurité</span>
+                            <h3>SAE11 - Sensibilisation à l'hygiène informatique</h3>
+                            
+                            <div class="project-details">
+                                <p><strong>Contexte :</strong> Travail pratique en binôme, réalisé pendant une séance de 3 heures.</p>
+                                
+                                <p><strong>Objectif :</strong> Implémenter la translation d'adresse avec iptables sous Linux.</p>
+                                
+                                <p><strong>Résultat :</strong> Note : 12,80/20 (Moyenne de classe : 11,89/20)</p>
+                            </div>
 
-        <!-- SEMESTRE 3 -->
+                            <div class="tech-tags">
+                                <span class="tech-tag">Linux</span>
+                                <span class="tech-tag">iptables</span>
+                                <span class="tech-tag">NAT/PAT</span>
+                                <span class="tech-tag">Wireshark</span>
+                            </div>
 
-<!-- Projet 1 - cyber -->
-    <section id="projets-s3">
-      <h1 class="titre">Projets Semestre 3</h1>
-      <div class="info">
-        <div class="sectionss">
-          <div class="jsp color-container">
-            <div class="article-container">
-              <img src="image/pentest.png" class="project-img"/>
-            </div>
-            <h2 class="us">.</h2><br>
-              <h3>Creation d'une application de messagerie android.</h3><br>
-              <p>
-                <strong>Contexte :</strong>
-<<<<<<< HEAD
-                Dans le cadre du parcours BUT2 Réseaux et Télécommunications, j'ai réalisé le travail pratique de SAE34 - Pentest..
-=======
-                Dans le cadre du parcours BUT1 Réseaux et Télécommunications, j'ai réalisé une application de messagerie android.
->>>>>>> 291f87ba398ddf2a3b43abafe8ff5ecb74144467
-              </p>
-              <br>
-              <p>
-                <strong>Objectif :</strong>
-<<<<<<< HEAD
-                L'objectif de ce projet à été de d'éffectuer des tests d'intrusions sur des machines académiques.
-              </p><br>
-              <p>
-                <strong>Résultat :</strong><br>
-                Note : ./20 <br>
-              </p>
-              <br><br>
-              <div>
-                <button class="show-more-button" onclick="toggleMoreContent(this)">Voir plus</button>
-                <div class="hidden show-more-content">
-                    <p class="p1960">Missions :
-                      <li>Réalisation du montage avec fibre optique (1310 nm)</li>
-                    </p>
+                            <button class="show-more-button" onclick="toggleMoreContent(this)" aria-expanded="false">
+                                Voir plus
+                            </button>
+                            
+                            <div class="show-more-content" aria-hidden="true">
+                                <h4>Missions réalisées :</h4>
+                                <ul>
+                                    <li>Explication du NAT et du PAT, présentation d'iptables</li>
+                                    <li>Activation de l'IP forwarding</li>
+                                    <li>Configuration de la communication avec le routeur</li>
+                                    <li>Configuration du NAT</li>
+                                    <li>Captures et analyses Wireshark</li>
+                                    <li>Installation de serveurs Web et FTP</li>
+                                    <li>Tests d'accès aux services</li>
+                                    <li>Configuration de ping entre deux PC</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Projet Portfolio -->
+                    <article class="jsp">
+                        <div class="color-container">
+                            <img src="image/html.webp" alt="Développement web HTML et CSS" class="project-img" loading="lazy">
+                        </div>
+                        
+                        <div class="project-content">
+                            <span class="project-type">Développement Web</span>
+                            <h3>Portfolio personnel en HTML/CSS</h3>
+                            
+                            <div class="project-details">
+                                <p><strong>Contexte :</strong> Projet de développement web, première approche des langages HTML et CSS.</p>
+                                
+                                <p><strong>Objectif :</strong> Développer un site web complet en utilisant HTML pour le contenu et CSS pour la mise en forme.</p>
+                                
+                                <p><strong>Résultat :</strong> Note : 15/20 (Moyenne : 12,30/20)</p>
+                            </div>
+
+                            <div class="tech-tags">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">Responsive</span>
+                            </div>
+
+                            <button class="show-more-button" onclick="toggleMoreContent(this)" aria-expanded="false">
+                                Voir plus
+                            </button>
+                            
+                            <div class="show-more-content" aria-hidden="true">
+                                <h4>Missions réalisées :</h4>
+                                <ul>
+                                    <li>Construction du contenu structuré en HTML</li>
+                                    <li>Mise en place de l'architecture du site</li>
+                                    <li>Intégration des informations personnelles et professionnelles</li>
+                                    <li>Conception et mise en page avec CSS</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
                 </div>
-              </div>
-          </div>
-
-      <!-- Projet 1 - cyber -->
-      <div class="info">
-        <div class="sectionss">
-          <div class="jsp color-container">
-            <div class="article-container">
-              <img src="image/pentest.png" class="project-img"/>
             </div>
-            <h2 class="us">.</h2><br>
-              <h3>.</h3><br>
-              <p>
-                <strong>Contexte :</strong>
-                Dans le cadre du parcours BUT2 Réseaux et Télécommunications, j'ai réalisé le travail pratique de SAE34 - Pentest..
-              </p>
-              <br>
-              <p>
-                <strong>Objectif :</strong>
-                L'objectif de ce projet à été de d'éffectuer des tests d'intrusions sur des machines académiques.
-              </p><br>
-              <p>
-                <strong>Résultat :</strong><br>
-                Note : ./20 <br>
-              </p>
-              <br><br>
-              <div>
-                <button class="show-more-button" onclick="toggleMoreContent(this)">Voir plus</button>
-                <div class="hidden show-more-content">
-                    <p class="p1960">Missions :
-                      <li>Réalisation du montage avec fibre optique (1310 nm)</li>
-                    </p>
-                </div>
-              </div>
-          </div>
-        </div>
+        </section>
 
-      <!-- Projet 1 - cyber -->
-      <div class="info">
-        <div class="sectionss">
-          <div class="jsp color-container">
-            <div class="article-container">
-              <img src="image/pentest.png" class="project-img"/>
+        <!-- Semestre 2 -->
+        <section id="projets-s2" aria-labelledby="titre-s2">
+            <div class="section-header">
+                <div class="title-wrapper">
+                    <h2 id="titre-s2" class="titre">Projets Semestre 2</h2>
+                </div>
             </div>
-            <h2 class="us">.</h2><br>
-              <h3>.</h3><br>
-              <p>
-                <strong>Contexte :</strong>
-                Dans le cadre du parcours BUT2 Réseaux et Télécommunications, j'ai réalisé le travail pratique de SAE34 - Pentest..
-              </p>
-              <br>
-              <p>
-                <strong>Objectif :</strong>
-                L'objectif de ce projet à été de d'éffectuer des tests d'intrusions sur des machines académiques.
-=======
-                L'objectif de ce projet est de réaliser une application de messagerie instantanée sur Android en utilisant android studio et firebase.
->>>>>>> 291f87ba398ddf2a3b43abafe8ff5ecb74144467
-              </p><br>
-              <p>
-                <strong>Résultat :</strong><br>
-                Note : ./20 <br>
-              </p>
-              <br><br>
-              <div>
-                <button class="show-more-button" onclick="toggleMoreContent(this)">Voir plus</button>
-                <div class="hidden show-more-content">
-                    <p class="p1960">Missions :
-<<<<<<< HEAD
-                      <li>Réalisation du montage avec fibre optique (1310 nm)</li>
-=======
-                      <li>Création d'une page de connection ainsi qu'une page de création de compte avec le java pour la partie fonctionnelle et XML pour le style de la page.</li>
-                      <li>La deuxième étape était de créer et configurer une base de donnée firebase en liant l'application et la base de donnée.</li>
-                      <li>Ensuite, un point important était la construction de la page principale où l'on peut envoyer les messages.</li>
-                      <li>Puis, on a ajouter la fonctionnalité qui permet la déconnexion de l'utilisateurs de l'application ainsi que sur la base de donnée.</li>
-                      <li>Dans cette avant dernière étape, nous avons ajouté un système de j'aime qui permet de mettre en haut les messages les plus "likés".</li>
-                      <li>Pour cette dernière étape, nous avons fait tous les tests pour un bon fonctionnement de l'application.</li>
->>>>>>> 291f87ba398ddf2a3b43abafe8ff5ecb74144467
-                    </p>
-                </div>
-              </div>
-          </div>
-        </div>
-      </section>
 
-      
-<br><br><br><br>
+            <div class="sections">
+                <div class="sectionss">
+                    <!-- Projet Télécoms S2 -->
+
+                    <!-- Projet SAE21 -->
+                    <article class="jsp">
+                        <div class="color-container">
+                            <img src="image/sae21.webp" alt="Configuration réseau Linux" class="project-img" loading="lazy">
+                        </div>
+                        
+                        <div class="project-content">
+                            <span class="project-type">Réseaux</span>
+                            <h3>SAE21 - Translation d'adresse avec iptables</h3>
+                            
+                            <div class="project-details">
+                                <p><strong>Contexte :</strong> Travail pratique en binôme, réalisé pendant une séance de 3 heures.</p>
+                                
+                                <p><strong>Objectif :</strong> Implémenter la translation d'adresse avec iptables sous Linux.</p>
+                                
+                                <p><strong>Résultat :</strong> En attente de notation</p>
+                            </div>
+
+                            <div class="tech-tags">
+                                <span class="tech-tag">Linux</span>
+                                <span class="tech-tag">iptables</span>
+                                <span class="tech-tag">NAT/PAT</span>
+                                <span class="tech-tag">Wireshark</span>
+                                <span class="tech-tag">FTP/Web</span>
+                            </div>
+
+                            <button class="show-more-button" onclick="toggleMoreContent(this)" aria-expanded="false">
+                                Voir plus
+                            </button>
+                            
+                            <div class="show-more-content" aria-hidden="true">
+                                <h4>Missions réalisées :</h4>
+                                <ul>
+                                    <li>Explication du NAT et du PAT, présentation d'iptables</li>
+                                    <li>Activation de l'IP forwarding</li>
+                                    <li>Configuration de la communication avec le routeur</li>
+                                    <li>Configuration du NAT</li>
+                                    <li>Captures et analyses Wireshark</li>
+                                    <li>Installation de serveurs Web et FTP</li>
+                                    <li>Tests d'accès aux services internet</li>
+                                    <li>Configuration de ping entre deux PC</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Projet Memory PHP -->
+                    <article class="jsp">
+                        <div class="color-container">
+                            <img src="image/memo.webp" alt="Jeu de mémoire en PHP" class="project-img" loading="lazy">
+                        </div>
+                        
+                        <div class="project-content">
+                            <span class="project-type">Développement Web</span>
+                            <h3>Jeu de mémoire en HTML/CSS/PHP</h3>
+                            
+                            <div class="project-details">
+                                <p><strong>Contexte :</strong> Travail pratique réalisé en quatre séances, découpé en deux grandes parties.</p>
+                                
+                                <p><strong>Objectif :</strong> Apprendre et comprendre le langage PHP pour créer un jeu interactif.</p>
+                                
+                                <p><strong>Résultat :</strong> En attente de notation</p>
+                            </div>
+
+                            <div class="tech-tags">
+                                <span class="tech-tag">PHP</span>
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Jeu</span>
+                            </div>
+
+                            <button class="show-more-button" onclick="toggleMoreContent(this)" aria-expanded="false">
+                                Voir plus
+                            </button>
+                            
+                            <div class="show-more-content" aria-hidden="true">
+                                <h4>Missions réalisées :</h4>
+                                <ul>
+                                    <li>Génération dynamique d'un plateau de jeu</li>
+                                    <li>Chargement et récupération des émoticônes</li>
+                                    <li>Affichage interactif du plateau de jeu</li>
+                                    <li>Récupération des choix utilisateur</li>
+                                    <li>Gestion des émoticônes et des cartes</li>
+                                    <li>Mise à jour en temps réel de l'affichage</li>
+                                    <li>Logique de retournement des cartes</li>
+                                    <li>Gestion des paires identiques</li>
+                                    <li>Système de fin de partie et score</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Projet SAE24 -->
+                    <article class="jsp">
+                        <div class="color-container">
+                            <img src="image/sae24.webp" alt="Infrastructure réseau entreprise" class="project-img" loading="lazy">
+                        </div>
+                        
+                        <div class="project-content">
+                            <span class="project-type">Projet Intégratif</span>
+                            <h3>SAE24 - Infrastructure réseau d'entreprise</h3>
+                            
+                            <div class="project-details">
+                                <p><strong>Contexte :</strong> Travail en groupe de 4 étudiants sur deux semaines, projet intégratif.</p>
+                                
+                                <p><strong>Objectif :</strong> Concevoir une infrastructure réseau complète avec services et mesures de sécurité.</p>
+                                
+                                <p><strong>Résultat :</strong> Projet en cours</p>
+                            </div>
+
+                            <div class="tech-tags">
+                                <span class="tech-tag">VLAN</span>
+                                <span class="tech-tag">Active Directory</span>
+                                <span class="tech-tag">DHCP</span>
+                                <span class="tech-tag">VoIP</span>
+                                <span class="tech-tag">Sécurité</span>
+                            </div>
+
+                            <button class="show-more-button" onclick="toggleMoreContent(this)" aria-expanded="false">
+                                Voir plus
+                            </button>
+                            
+                            <div class="show-more-content" aria-hidden="true">
+                                <h4>Missions réalisées :</h4>
+                                <ul>
+                                    <li>Configuration de VLAN et d'un switch manageable</li>
+                                    <li>Mise en place du WiFi et d'un routeur de périphérie</li>
+                                    <li>Installation de serveurs Windows (Active Directory) et Linux</li>
+                                    <li>Mise en place d'un serveur téléphonique (VoIP)</li>
+                                    <li>Installation et configuration d'un serveur web</li>
+                                    <li>Configuration DHCP avec logs et protection contre les attaques</li>
+                                    <li>Sécurisation contre DHCP spoofing et starvation</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+
+                        <!-- Semestre 3 -->
+            <section id="projets-s3" aria-labelledby="titre-s3">
+                <div class="section-header">
+                    <div class="title-wrapper">
+                        <h2 id="titre-s3" class="titre">Projets Semestre 3</h2>
+                    </div>
+                </div>
+    
+                <div class="sections">
+                    <div class="sectionss">
+                        <!-- Projet Application Android -->
+                        <article class="jsp">
+                            <div class="color-container">
+                                <img src="image/messagerie.webp" alt="Application de messagerie Android" class="project-img" loading="lazy">
+                            </div>
+                            
+                            <div class="project-content">
+                                <span class="project-type">Développement Mobile</span>
+                                <h3>Application de messagerie Android</h3>
+                                
+                                <div class="project-details">
+                                    <p><strong>Contexte :</strong> Projet de développement mobile avec Android Studio et Firebase.</p>
+                                    
+                                    <p><strong>Objectif :</strong> Réaliser une application de messagerie instantanée complète sur Android.</p>
+                                    
+                                    <p><strong>Résultat :</strong> Note : ?/20</p>
+                                </div>
+    
+                                <div class="tech-tags">
+                                    <span class="tech-tag">Android Studio</span>
+                                    <span class="tech-tag">Java</span>
+                                    <span class="tech-tag">XML</span>
+                                    <span class="tech-tag">Firebase</span>
+                                </div>
+    
+                                <button class="show-more-button" onclick="toggleMoreContent(this)" aria-expanded="false">
+                                    Voir plus
+                                </button>
+                                
+                                <div class="show-more-content" aria-hidden="true">
+                                    <h4>Missions réalisées :</h4>
+                                    <ul>
+                                        <li>Création des pages de connexion et d'inscription (Java + XML)</li>
+                                        <li>Configuration et liaison avec la base de données Firebase</li>
+                                        <li>Construction de la page principale de messagerie</li>
+                                        <li>Implémentation de la fonctionnalité de déconnexion</li>
+                                        <li>Ajout d'un système de "j'aime" pour les messages</li>
+                                        <li>Classement des messages par popularité</li>
+                                        <li>Tests complets de l'application</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+    
+                        <!-- SAE31 - Pentest -->
+                        <article class="jsp">
+                            <div class="color-container">
+                                <img src="image/pentest.webp" alt="Test de pénétration et cybersécurité" class="project-img" loading="lazy">
+                            </div>
+                            
+                            <div class="project-content">
+                                <span class="project-type">Cybersécurité</span>
+                                <h3>SAE31 - Test de pénétration</h3>
+                                
+                                <div class="project-details">
+                                    <p><strong>Contexte :</strong> Travail en équipe de 2 étudiants sur 1 semestre</p>
+                                    
+                                    <p><strong>Objectif :</strong> Réaliser un test de pénétration</p>
+                                    
+                                    <p><strong>Résultat :</strong> Note : 12/20</p>
+                                </div>
+    
+                                <div class="tech-tags">
+                                    <span class="tech-tag">Kali Linux</span>
+                                    <span class="tech-tag">Nmap</span>
+                                    <span class="tech-tag">Metasploit</span>
+                                    <span class="tech-tag">Wireshark</span>
+                                    <span class="tech-tag">Burp Suite</span>
+                                </div>
+    
+                                <button class="show-more-button" onclick="toggleMoreContent(this)" aria-expanded="false">
+                                    Voir plus
+                                </button>
+                                
+                                <div class="show-more-content" aria-hidden="true">
+                                    <h4>Missions réalisées :</h4>
+                                    <ul>
+                                        <li>Scan de vulnérabilités avec Nessus et OpenVAS</li>
+                                        <li>Tests d'intrusion sur services web (Burp Suit)</li>
+                                        <li>Exploitation de vulnérabilités réseau</li>
+                                        <li>Rédaction du rapport</li>
+                                    </ul>
+                                    
+                                    <h4>Vulnérabilités identifiées :</h4>
+                                    <ul>
+                                        <li>Mots de passe faibles sur comptes administrateurs</li>
+                                        <li>Services obsolètes avec failles de sécurité</li>
+                                        <li>Configuration firewall insuffisante</li>
+                                        <li>Reverse Shell</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+    
+                        <!-- Projet Infrastructure Cloud -->
+                        <article class="jsp">
+                            <div class="color-container">
+                                <img src="image/qemu.webp" alt="Infrastructure cloud et virtualisation" class="project-img" loading="lazy">
+                            </div>
+                            
+                            <div class="project-content">
+                                <span class="project-type">Administration Système</span>
+                                <h3>Déploiement d'infrastructure cloud hybride</h3>
+                                
+                                <div class="project-details">
+                                    <p><strong>Contexte :</strong> Decouverte du domaine du cloud, mise en place d'une architecture cloud.</p>
+                                    
+                                    <p><strong>Objectif :</strong> Concevoir et déployer une infrastructure hybride.</p>
+                                    
+                                    <p><strong>Résultat :</strong> Note : ?/20</p>
+                                </div>
+    
+                                <div class="tech-tags">
+                                    <span class="tech-tag">Virtualbox</span>
+                                    <span class="tech-tag">Podman</span>
+                                    <span class="tech-tag">Ansible</span>
+                                    <span class="tech-tag">RDS</span>
+                                    <span class="tech-tag">HyperV</span>
+                                    <span class="tech-tag">QEMU</span>
+
+                                </div>
+    
+                                <button class="show-more-button" onclick="toggleMoreContent(this)" aria-expanded="false">
+                                    Voir plus
+                                </button>
+                                
+                                <div class="show-more-content" aria-hidden="true">
+                                    <h4>Missions réalisées :</h4>
+                                    <ul>
+                                        <li>Installation et configuration de QEMU, HyperV, Podman...</li>
+                                        <li>Création de machines virtuelles Windows et Linux</li>
+                                        <li>Déploiement de conteneurs Docker</li>
+                                        <li>Automatisation avec Ansible</li>
+                                        <li>Mise en place de sauvegarde</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+
+                        
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- Semestre 4 - Stage -->
+        <section id="projets-s4" aria-labelledby="titre-s4">
+            <div class="section-header">
+                <div class="title-wrapper">
+
+                    <h2 id="titre-s4" class="titre">Semestre 4 - Stage Professionnel</h2>
+                </div>
+            </div>
+
+            <div class="sections">
+                <div class="sectionss">
+                    <!-- Stage principal -->
+                    <article class="jsp">
+                        <div class="color-container">
+                            <img src="image/detector20000.webp" alt="Environnement professionnel de stage" class="project-img" loading="lazy">
+                        </div>
+                        
+                        <div class="project-content">
+                            <span class="project-type">Stage Professionnel</span>
+                            <h3>Stage Cybersécurité et IA</h3>
+                            
+                            <div class="project-details">
+                                <p><strong>Entreprise :</strong> Robert Gordon University (Aberdeen, Scotland)</p>
+                                
+                                <p><strong>Durée :</strong> 10 semaines (Avril - Juin 2025)</p>
+                                
+                                <p><strong>Objectifs :</strong>Recherche et dévellopement de solutions de sécurité contre les CWE (Common Weakness Enumeration) avec de l'IA</p>
+                                
+                                <p><strong>Statut :</strong> Recherche en cours</p>
+                            </div>
+
+                            <div class="tech-tags">
+                                <span class="tech-tag">Recherche de CVE et CWE</span>
+                                <span class="tech-tag">Cybersécurité</span>
+                                <span class="tech-tag">Intelligence Artifficielle</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">SkLearn</span>
+
+                            </div>
+
+                            <button class="show-more-button" onclick="toggleMoreContent(this)" aria-expanded="false">
+                                Voir plus
+                            </button>
+                            
+                            <div class="show-more-content" aria-hidden="true">
+                                <h4>Missions prévues :</h4>
+                                <ul>
+                                    <li>Recherche des attaques connues de Cyber-Terroriste</li>
+                                    <li>Analyse des vulnérabilités et des failles de sécurité</li>
+                                    <li>Développement de solutions de sécurité avec Python</li>
+                                    <li>Implémentation de modèles d'IA pour la détection des menaces</li>
+                                    <li>Tests et validation des solutions développées</li>
+                                    <li>Documentation des résultats et des méthodologies</li>
+                                    <li>Collaboration avec l'équipe de recherche de l'université</li>
+                                    <li>Participation aux réunions de suivi et de présentation</li>
+                                    <li>Rédaction du rapport de stage et soutenance</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Projet de fin de stage -->
+                    <article class="jsp">
+                        <div class="color-container">
+                            <img src="image/rapportstage.webp" alt="Rapport de stage et présentation" class="project-img" loading="lazy">
+                        </div>
+                        
+                        <div class="project-content">
+                            <span class="project-type">Projet de Stage</span>
+                            <h3>Rapport de stage et soutenance</h3>
+                            
+                            <div class="project-details">
+                                <p><strong>Contexte :</strong> Restitution de l'expérience professionnelle acquise pendant le stage.</p>
+                                
+                                <p><strong>Objectif :</strong> Démontrer l'acquisition de compétences professionnelles et techniques.</p>
+                                
+                                <p><strong>Livrables :</strong> Rapport écrit (20 pages) + Présentation orale (20 minutes)</p>
+                                
+                                <p><strong>Évaluation :</strong> Tuteur entreprise + Tuteur académique</p>
+                            </div>
+
+                            <div class="tech-tags">
+                                <span class="tech-tag">Rédaction</span>
+                                <span class="tech-tag">Analyse</span>
+                                <span class="tech-tag">Présentation</span>
+                                <span class="tech-tag">Synthèse</span>
+                                <span class="tech-tag">Communication</span>
+                            </div>
+
+                            <button class="show-more-button" onclick="toggleMoreContent(this)" aria-expanded="false">
+                                Voir plus
+                            </button>
+                            
+                            <div class="show-more-content" aria-hidden="true">
+                                <h4>Structure du rapport :</h4>
+                                <ul>
+                                    <li>Présentation de l'entreprise et du service d'accueil</li>
+                                    <li>Description détaillée des missions effectuées</li>
+                                    <li>Analyse technique des projets réalisés</li>
+                                    <li>Difficultés rencontrées et solutions apportées</li>
+                                    <li>Apports professionnels et personnels du stage</li>
+                                    <li>Conclusion et perspectives d'évolution</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
     <footer>
-      <p>© Ulysse RICHARD</p>
+        <p>&copy; 2024 Ulysse RICHARD</p>
     </footer>
-  </body>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>

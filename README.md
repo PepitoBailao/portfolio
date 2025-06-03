@@ -1,22 +1,45 @@
-# Portfolio Personnel - Ulysse RICHARD
+# Portfolio - Ulysse RICHARD
 
-Bienvenue sur mon portfolio personnel ! Ceci est un projet destiné à présenter mes compétences, projets et expériences professionnelles.
+Portfolio personnel d'un étudiant en BUT Réseaux et Télécommunications.
 
-## Avertissement
-Ce portfolio est ma propriété intellectuelle. Toute copie, reproduction ou utilisation non autorisée du contenu est strictement interdite. Le droit d'auteur de l'ensemble du contenu, y compris le code source, les images, et autres éléments, appartient à Ulysse RICHARD. © 2023 Tous droits réservés.
+## Site
 
-## Contenu du Portfolio
-- **À propos de moi**: Une brève introduction sur qui je suis, mes compétences et mes objectifs.
-- **Projets**: Une liste de projets auxquels j'ai participé, avec des descriptions détaillées et des liens vers les dépôts GitHub ou les démos en direct.
-- **Expérience professionnelle**: Un aperçu de mon parcours professionnel et de mes réalisations.
-- **Formation et Éducation**: Informations sur mes études et formations pertinentes.
-- **Contact**: Comment me contacter pour des opportunités professionnelles ou des collaborations.
+https://pepitobailao.github.io/portfolio/#
 
-## Languages utilisés
-- HTML
-- CSS
-- JavaScript
+## Structure
 
-Merci de visiter mon portfolio !
+```
+portfolio/
+├── index.html          # Page d'accueil
+├── apropos.html         # À propos
+├── experience.html      # Expériences
+├── competence.html      # Compétences
+├── projet.html          # Projets
+├── divers.html          # Divers
+├── contact.html         # Contact
+├── CSS/                 # Feuilles de style
+├── image/               # Images et médias
+├── doc/                 # Documents (CV, etc.)
+└── script.js            # JavaScript
+```
+
+## Technologies
+
+- **Frontend :** HTML5, CSS3, JavaScript
+- **Design :** Responsive, Mobile-first
+
+## Fonctionnalités
+
+- Design responsive
+- Navigation mobile
+- Effets interactifs
+- Lecteur audio intégré
+
+## Objectif
+
+Présenter mon parcours académique en BUT Réseaux et Télécommunications et mes compétences en développement web, cybersécurité et administration système.
 
 ---
+
+**Contact :** ulysse.richard@etu.uca.fr
+**LinkedIn :** [Ulysse RICHARD](https://linkedin.com/in/ulysse-richard)
