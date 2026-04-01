@@ -2,18 +2,33 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <title>Experience</title>
-    <link rel="shortcut icon" href="image/icon3.gif" />
-    <link rel="stylesheet" href="CSS/experience.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Parcours professionnel et formations d'Ulysse RICHARD en réseaux, télécommunications et cybersécurité. Timeline interactive et responsive." />
+    <meta name="keywords" content="Ulysse Richard, expérience, formation, BUT R&T, cybersécurité, stages, projets, timeline" />
+    <meta name="author" content="Ulysse RICHARD" />
+    <title>Expérience & Formation - Ulysse RICHARD | BUT Réseaux & Télécommunications</title>
+    <link rel="shortcut icon" href="image/logo.gif" />
     <link rel="stylesheet" href="CSS/general.css" />
+    <link rel="stylesheet" href="CSS/experience.css" />
+    <link rel="preload" href="image/formation-icon.webp" as="image" />
+    <link rel="preload" href="image/work-icon.webp" as="image" />
   </head>
   <body>
+    <!-- Navigation responsive -->
     <nav id="onglets">
       <div class="logo">RICHARD Ulysse</div>
-      <div>
+      
+      <button class="menu-toggle" aria-label="Menu navigation" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+      
+      <div class="nav-container">
         <ul class="nav-liens">
           <li><a href="index.html">Accueil</a></li>
-          <li><a href="apropos.html">A propos</a></li>
+          <li><a href="apropos.html">À propos</a></li>
+          <li><a href="experience.html" aria-current="page">Expérience</a></li>
           <li><a href="competence.html">Compétences</a></li>
           <li><a href="projet.html">Projets</a></li>
           <li><a href="divers.html">Divers</a></li>
@@ -22,40 +37,311 @@
       </div>
     </nav>
 
-<section id="experience">
-        <h1 class="titre">Experience Professionelle et Scolaire</h1>
-        <div class="section">
-            <div class="sectionss">
-              <div class="jsp">
-                <h3>Formation</h3><br>
-                <p>Juin 2023<br/>Obtention du baccalauréat général</p>
-                <p>Au lycée Aragon-Picasso à Givors(69).</p>
-                <p>Avec les spécialitées Mathématiques et Numérique et Sciences Informatiques</p>
-                <br>
-                <p>Septembre 2023<br/> Rentrée en BUT R&T à Clermont-Ferrand (63)</p>
-                <br>
-                <p>Février 2024<br/>Validation du 1er semestre</p>
-                <p>Juin 2024 <br>Validation de la première année de BUT Réseaux et Télécommunications</p>
-                <p>A Clermont-Ferrand (63).</p>
-                <br>
-                <p>Septembre 2024<br>Rentrée en seconde année de BUT R&T</p>
-                <p>En parcours CyberSécurité</p>
-                <br>
-              </div>
-              <div class="jsp">
-                <h3>Experience Professionnelle</h3><br>
-                <p>Juin 2023<br/>Stage de 3ème - Interface à Lyon</p>
-                <p>Objectif : Faire de la maintenance Informatiques pour des cabinets d'architecte à lyon (69).</p>
-                <br>
-                <p>Mars 2024 <br> Inventaire de Magasin - E.Leclerc à Chaponnay</p>
-                <p>Contexte : Mise en rayon et inventaire de magasin.</p>
-                <p>Objectif : Faire l'inventaire de chaque rayon du magasin, pour mon cas j'étais assigné au rayon liquide (alcool, apéritifs,...) et la remise en rayon de produit alimentaires.</p>
-                <p>Résultat : Le responsable du rayon liquide était trés satisfait de mon travail.</p>
-                <br>
+    <!-- Contenu principal -->
+    <main>
+      <section id="experience">
+        <header class="page-header">
+          <h1 class="untitre">Mon Parcours</h1>
+        </header>
+        
+        <div class="info">
+          <!-- Statistiques du parcours - Responsive Grid -->
+          <section class="stats-overview" aria-labelledby="stats-title">
+            <h2 id="stats-title" class="sr-only">Statistiques de mon parcours</h2>
+            
+            <div class="stat-card" tabindex="0">  
+              <div class="stat-content">
+                <span class="stat-number" aria-label="3 formations">3</span>
+                <span class="stat-label">Formations complétées</span>
               </div>
             </div>
+            
+            <div class="stat-card" tabindex="0">
+              <div class="stat-content">
+                <span class="stat-number" aria-label="2 expériences">2</span>
+                <span class="stat-label">Expériences professionnelles</span>
+              </div>
+            </div>
+            
+            <div class="stat-card" tabindex="0">
+              
+              <div class="stat-content">
+                <span class="stat-number" aria-label="Plus de 5 projets">5+</span>
+                <span class="stat-label">Projets académiques</span>
+              </div>
+            </div>
+            
+            <div class="stat-card" tabindex="0">
+              <div class="stat-content">
+                <span class="stat-number" aria-label="Plus de 2 années">2+</span>
+                <span class="stat-label">Années d'études supérieures</span>
+              </div>
+            </div>
+          </section>
+
+          <!-- Timeline responsive -->
+          <div class="timeline" role="list" aria-label="Timeline de mon parcours">
+            
+            <!-- Formation -->
+            <section class="timeline-section" aria-labelledby="formation-title">
+              <header class="section-header">
+                <h2 id="formation-title" class="section-title">
+                  <div class="title-wrapper">
+                    <span>Formation & Études</span>
+                  </div>
+                </h2>
+              </header>
+              
+              <div class="timeline-items" role="list">
+                <!-- BUT R&T 2ème année -->
+                <article class="timeline-item current education" role="listitem" tabindex="0">
+                  <div class="timeline-date">
+                    <time datetime="2024">
+                      <span class="year">2024-2025</span>
+                      <span class="month">En cours</span>
+                    </time>
+                  </div>
+                  <div class="timeline-content">
+                    <div class="timeline-marker current" aria-hidden="true"></div>
+                    <header class="item-header">
+                      <h3>BUT Réseaux & Télécommunications - 2ème année</h3>
+                      <span class="status current-status" aria-label="Formation en cours">En cours</span>
+                    </header>
+                    <h4 class="specialization">Parcours Cybersécurité</h4>
+                    <p class="location">
+                      IUT de Clermont-Ferrand (63)
+                    </p>
+                    
+                    <div class="content-details">
+                      <div class="achievements-section">
+                        <h5>Modules étudiés :</h5>
+                        <ul class="achievements">
+                          <li>Cybersécurité et tests d'intrusion</li>
+                          <li>Administration réseau et protocoles de sécurité</li>
+                          <li>Virtualisation et conteneurisation</li>
+                          <li>Gestion de projet</li>
+                        </ul>
+                      </div>
+                      
+                      <div class="skills-acquired">
+                        <h5>Compétences développées :</h5>
+                        <div class="skill-tags" role="list" aria-label="Technologies maîtrisées">
+                          <span class="skill-tag" role="listitem">Kali Linux</span>
+                          <span class="skill-tag" role="listitem">Pentest</span>
+                          <span class="skill-tag" role="listitem">Wireshark</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <!-- BUT R&T 1ère année -->
+                <article class="timeline-item completed education" role="listitem" tabindex="0">
+                  <div class="timeline-date">
+                    <time datetime="2023/2024">
+                      <span class="year">2023-2024</span>
+                      <span class="month">Validé</span>
+                    </time>
+                  </div>
+                  <div class="timeline-content">
+                    <div class="timeline-marker completed" aria-hidden="true"></div>
+                    <header class="item-header">
+                      <h3>BUT Réseaux & Télécommunications - 1ère année</h3>
+                      <span class="status completed-status" aria-label="Formation validée">Validé avec succès</span>
+                    </header>
+                    <h4 class="specialization">Tronc commun - Fondamentaux</h4>
+                    <p class="location">
+                      
+                      IUT de Clermont-Ferrand (63)
+                    </p>
+                    
+                    <div class="content-details">
+                      <div class="achievements-section">
+                        <h5>Modules fondamentaux :</h5>
+                        <ul class="achievements">
+                          <li>Architectures et protocoles des réseaux (TCP/IP, OSI)</li>
+                          <li>Administration système Linux et Windows Server</li>
+                          <li>Programmation (Python, Shell, HTML/CSS/JS)</li>
+                          <li>Bases de données relationnelles (SQL)</li>
+                          <li>Électronique et télécommunications</li>
+                        </ul>
+                      </div>
+                      
+                      <div class="skills-acquired">
+                        <h5>Technologies maîtrisées :</h5>
+                        <div class="skill-tags" role="list" aria-label="Technologies apprises">
+                          <span class="skill-tag" role="listitem">Cisco Packet Tracer</span>
+                          <span class="skill-tag" role="listitem">VMware</span>
+                          <span class="skill-tag" role="listitem">Python</span>
+                          <span class="skill-tag" role="listitem">MySQL</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <!-- Baccalauréat -->
+                <article class="timeline-item completed education" role="listitem" tabindex="0">
+                  <div class="timeline-date">
+                    <time datetime="2023-06">
+                      <span class="year">2023</span>
+                      <span class="month">Juin</span>
+                    </time>
+                  </div>
+                  <div class="timeline-content">
+                    <div class="timeline-marker completed" aria-hidden="true"></div>
+                    <header class="item-header">
+                      <h3>Baccalauréat Général</h3>
+                      <span class="status completed-status" aria-label="Diplôme obtenu">Obtenu</span>
+                    </header>
+                    <h4 class="specialization">Spécialités : Mathématiques & NSI</h4>
+                    <p class="location">
+                      
+                      Lycée Louis Aragon - Pablo Picasso, Givors (69)
+                    </p>
+                    
+                    <div class="content-details">
+                      <div class="achievements-section">
+                        <h5>Spécialisations :</h5>
+                        <ul class="achievements">
+                          <li>Numérique et Sciences Informatiques (NSI)</li>
+                          <li>Mathématiques</li>
+                          <li>Algorithmique et programmation Python</li>
+                          <li>Bases de données et SQL</li>
+                        </ul>
+                      </div>
+                      
+                      <div class="skills-acquired">
+                        <h5>Fondations acquises :</h5>
+                        <div class="skill-tags" role="list" aria-label="Bases techniques acquises">
+                          <span class="skill-tag" role="listitem">Python</span>
+                          <span class="skill-tag" role="listitem">Algorithmique</span>
+                          <span class="skill-tag" role="listitem">SQL</span>
+                          <span class="skill-tag" role="listitem">HTML/CSS</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </section>
+
+            <!-- Expérience Professionnelle -->
+            <section class="timeline-section" aria-labelledby="experience-title">
+              <header class="section-header">
+                <h2 id="experience-title" class="section-title">
+                  <div class="title-wrapper">
+                    <span>Expérience Professionnelle</span>
+                  </div>
+                </h2>
+              </header>
+              
+              <div class="timeline-items" role="list">
+                <!-- Stage E.Leclerc -->
+                <article class="timeline-item work professional" role="listitem" tabindex="0">
+                  <div class="timeline-date">
+                    <time datetime="2024-03">
+                      <span class="year">2024</span>
+                      <span class="month">Mars</span>
+                    </time>
+                  </div>
+                  <div class="timeline-content">
+                    <div class="timeline-marker work" aria-hidden="true"></div>
+                    <header class="item-header">
+                      <h3>Agent d'Inventaire</h3>
+                      <span class="company">E.Leclerc Chaponnay</span>
+                    </header>
+                    <p class="location">
+                      
+                      Chaponnay (69) • Job étudiant
+                    </p>
+                    
+                    <div class="work-details">
+                      <div class="objective">
+                        <h5>Contexte & Mission :</h5>
+                        <p>Mission d'inventaire dans le cadre d'un emploi étudiants</p>
+                      </div>
+                      
+                      <div class="tasks">
+                        <h5>Responsabilités :</h5>
+                        <ul>
+                          <li>Inventaire du rayon boissons alcoolisées et spiritueux</li>
+                          <li>Comptage précis et saisie des stocks</li>
+                          <li>Remise en rayon et réorganisation</li>
+                          <li>Collaboration avec l'équipe</li>
+                        </ul>
+                      </div>
+                      
+                      <div class="skills-gained">
+                        <h5>Compétences développées :</h5>
+                        <div class="skill-tags" role="list" aria-label="Soft skills développées">
+                          <span class="skill" role="listitem">Rigueur</span>
+                          <span class="skill" role="listitem">Organisation</span>
+                          <span class="skill" role="listitem">Gestion du temps</span>
+                          <span class="skill" role="listitem">Travail en équipe</span>
+                          <span class="skill" role="listitem">Adaptabilité</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <!-- Stage Interface -->
+                <article class="timeline-item work professional" role="listitem" tabindex="0">
+                  <div class="timeline-date">
+                    <time datetime="2021-06">
+                      <span class="year">2021</span>
+                      <span class="month">Juin</span>
+                    </time>
+                  </div>
+                  <div class="timeline-content">
+                    <div class="timeline-marker work" aria-hidden="true"></div>
+                    <header class="item-header">
+                      <h3>Stage de découverte - Technicien IT</h3>
+                      <span class="company">Interface Lyon</span>
+                    </header>
+                    <p class="location">
+                      Lyon (69) • Stage de 3ème
+                    </p>
+                    
+                    <div class="work-details">
+                      <div class="objective">
+                        <h5>Contexte & Mission :</h5>
+                        <p>Première immersion professionnelle dans le domaine IT, accompagnement d'équipes techniques</p>
+                      </div>
+                      
+                      <div class="tasks">
+                        <h5>Activités découvertes :</h5>
+                        <ul>
+                          <li>Observation des interventions de maintenance informatique</li>
+                          <li>Assistance au diagnostic de problèmes matériels</li>
+                          <li>Participation aux installations logicielles</li>
+                          <li>Support de niveau 1 auprès des utilisateurs</li>
+                        </ul>
+                      </div>
+                      
+                      <div class="skills-gained">
+                        <h5>Découvertes professionnelles :</h5>
+                        <div class="skill-tags" role="list" aria-label="Compétences techniques découvertes">
+                          <span class="skill" role="listitem">Support technique</span>
+                          <span class="skill" role="listitem">Diagnostic matériel</span>
+                          <span class="skill" role="listitem">Relation client</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </section>
           </div>
         </div>
       </section>
+    </main>
+
+    <footer>
+      <p>© Ulysse RICHARD</p>
+    </footer>
+
+    <script src="script.js" defer></script>
   </body>
 </html>

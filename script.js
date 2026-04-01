@@ -10,42 +10,75 @@ document.querySelectorAll('.iconmusiques').forEach(function(iconmusiques) {
       this.classList.add('rotating');
     }
   });
+
+  // Arrêter la rotation quand la musique se termine
+  audio.addEventListener('ended', function() {
+    iconmusiques.classList.remove('rotating');
+  });
 });
 
-document.querySelectorAll('.logo').forEach(function(logo) {
-  var audio = new Audio('musique/prout.mp3');
+// Image blur hover effect
+const image = document.getElementById("img");
 
-  logo.addEventListener('click', function() {
-      audio.play();
-    });
-});
+if (image) {
+  // Appliquer le blur par défaut
+  image.style.filter = "blur(10px)";
+  
+  image.addEventListener("mouseover", function() {
+    image.style.filter = "blur(0px)";
+  });
+  
+  image.addEventListener("mouseout", function() {
+    image.style.filter = "blur(10px)";
+  });
+}
 
+// Menu mobile toggle
+const menuToggle = document.querySelector('.menu-toggle');
+const navContainer = document.querySelector('.nav-container');
 
+if (menuToggle && navContainer) {
+  menuToggle.addEventListener('click', () => {
+    const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+    menuToggle.setAttribute('aria-expanded', !isExpanded);
+    navContainer.classList.toggle('active');
+  });
+}
+
+// Fonction pour le contenu "Voir plus" améliorée
 function toggleMoreContent(button) {
-  var moreContent = button.nextElementSibling;
-  if (moreContent.classList.contains('hidden')) {
-      moreContent.classList.remove('hidden');
-  } else {
-      moreContent.classList.add('hidden');
+  const content = button.nextElementSibling;
+  const isExpanded = button.getAttribute('aria-expanded') === 'true';
+  
+  if (content) {
+    if (isExpanded) {
+      content.classList.remove('active');
+      content.setAttribute('aria-hidden', 'true');
+      button.setAttribute('aria-expanded', 'false');
+      button.textContent = 'Voir plus';
+    } else {
+      content.classList.add('active');
+      content.setAttribute('aria-hidden', 'false');
+      button.setAttribute('aria-expanded', 'true');
+      button.textContent = 'Voir moins';
+    }
   }
 }
 
-// script.js
-const image = document.getElementById("img");
+// Lazy loading pour les images
+if ('IntersectionObserver' in window) {
+  const imageObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const img = entry.target;
+        img.src = img.dataset.src || img.src;
+        img.classList.remove('lazy');
+        observer.unobserve(img);
+      }
+    });
+  });
 
-image.addEventListener("click", function() {
-    if (image.style.filter === "blur(0px)") {
-        image.style.filter = "blur(10px)";
-    } else {
-        image.style.filter = "blur(0px)";
-    }
-})
-
-function toggleMoreContent(button) {
-  let content = button.nextElementSibling;
-  if (content.style.display === "none" || content.style.display === "") {
-      content.style.display = "block";
-  } else {
-      content.style.display = "none";
-  }
-};
+  document.querySelectorAll('img[loading="lazy"]').forEach(img => {
+    imageObserver.observe(img);
+  });
+}

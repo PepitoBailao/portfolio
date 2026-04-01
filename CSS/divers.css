@@ -1,0 +1,429 @@
+/* DIVERS PAGE STYLES */
+
+/* Main Container */
+#experience {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--spacing-xxl) var(--spacing-lg);
+}
+
+/* Hero Image Section */
+.imagesss {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: clamp(250px, 30vw, 400px);
+  width: clamp(250px, 30vw, 400px);
+  margin: 0 auto var(--spacing-xxl);
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: var(--shadow-medium);
+  transition: var(--transition-normal);
+  border: 2px solid var(--card-border);
+}
+
+.imagesss:hover {
+  transform: scale(1.05);
+  box-shadow: var(--shadow-heavy);
+  border-color: var(--primary-color);
+}
+
+.imagesss img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: filter var(--transition-normal);
+  cursor: pointer;
+}
+
+.imagesss:hover img,
+.imagesss:focus-within img {
+  filter: brightness(1.1);
+}
+
+/* Section Title */
+.untitre {
+  font-size: clamp(1.75rem, 4vw, 2.25rem);
+  font-weight: 700;
+  color: var(--text-dark);
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+  position: relative;
+}
+
+.untitre::after {
+  content: '';
+  position: absolute;
+  bottom: -0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4rem;
+  height: 3px;
+  background: var(--primary-color);
+  border-radius: 2px;
+}
+
+/* Info Container */
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+}
+
+/* Sections Container */
+.sectionss {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-xl);
+}
+
+/* Article Container */
+.article-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-xl);
+}
+
+/* Individual Articles */
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-lg);
+  background: var(--card-bg);
+  backdrop-filter: blur(20px);
+  border: 2px solid var(--card-border);
+  border-radius: var(--radius-lg);
+  text-align: center;
+  transition: var(--transition-normal);
+  box-shadow: var(--shadow-card);
+  position: relative;
+  overflow: hidden;
+}
+
+article::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--primary-color);
+  transform: scaleX(0);
+  transition: var(--transition-normal);
+}
+
+article:hover::before {
+  transform: scaleX(1);
+}
+
+article:hover {
+  box-shadow: var(--shadow-hover);
+  border-color: var(--primary-color);
+}
+
+/* Icons */
+article .icon {
+  width: 3rem;
+  height: 3rem;
+  transition: var(--transition-fast);
+  cursor: default;
+  filter: grayscale(0.3);
+}
+
+article:hover .icon {
+  filter: grayscale(0);
+}
+
+.icondivers,
+.iconmusiques {
+  width: clamp(120px, 15vw, 160px);
+  height: clamp(120px, 15vw, 160px);
+  cursor: pointer;
+  transition: var(--transition-normal);
+  border-radius: var(--radius-md);
+  object-fit: cover;
+  border: 2px solid var(--card-border);
+  box-shadow: var(--shadow-light);
+}
+
+.icondivers:hover,
+.iconmusiques:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+  border-color: var(--primary-color);
+  box-shadow: var(--shadow-medium);
+}
+
+/* Cards */
+.jsp, .jsp2, .jsp3 {
+  padding: var(--spacing-xl);
+  background: var(--card-bg);
+  backdrop-filter: blur(20px);
+  border-radius: var(--radius-lg);
+  border: 2px solid var(--card-border);
+  text-align: center;
+  margin-bottom: var(--spacing-xxl);
+  transition: var(--transition-normal);
+  box-shadow: var(--shadow-card);
+  position: relative;
+  overflow: hidden;
+}
+
+.jsp::before, .jsp2::before, .jsp3::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--primary-color);
+  transform: scaleX(0);
+  transition: var(--transition-normal);
+}
+
+.jsp:hover::before, .jsp2:hover::before, .jsp3:hover::before {
+  transform: scaleX(1);
+}
+
+.jsp:hover, .jsp2:hover, .jsp3:hover {
+  box-shadow: var(--shadow-hover);
+  border-color: var(--primary-color);
+}
+
+/* Typography */
+.jsp h3, .jsp2 h3, .jsp3 h3 {
+  font-size: clamp(1.25rem, 3vw, 1.5rem);
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: var(--spacing-md);
+}
+
+.jsp p, .jsp2 p, .jsp3 p {
+  font-size: clamp(0.875rem, 2vw, 1rem);
+  line-height: 1.6;
+  color: var(--text-light);
+  margin-bottom: var(--spacing-sm);
+}
+
+/* Animations */
+.rotating {
+  animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+/* Hover Animation for Icons */
+.icon-hover {
+  transition: var(--transition-normal);
+}
+
+.icon-hover:hover {
+  animation: bounce 0.6s ease-in-out;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Specialty Cards */
+.skill-card {
+  background: var(--card-bg);
+  backdrop-filter: blur(20px);
+  border: 2px solid var(--card-border);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-lg);
+  text-align: center;
+  transition: var(--transition-normal);
+  box-shadow: var(--shadow-light);
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: var(--primary-color);
+  transform: scaleX(0);
+  transition: transform var(--transition-normal);
+}
+
+.skill-card:hover::before {
+  transform: scaleX(1);
+}
+
+.skill-card:hover {
+  border-color: var(--primary-color);
+  box-shadow: var(--shadow-medium);
+}
+
+/* Interest Tags */
+.interests-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: var(--spacing-sm);
+  margin: var(--spacing-lg) 0;
+}
+
+.interest-tag {
+  background: rgba(var(--primary-color-rgb, 74, 144, 226), 0.1);
+  color: var(--primary-color);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--radius-full);
+  text-align: center;
+  font-size: clamp(0.875rem, 2vw, 1rem);
+  font-weight: 600;
+  border: 1px solid rgba(var(--primary-color-rgb, 74, 144, 226), 0.3);
+  transition: var(--transition-normal);
+  cursor: default;
+}
+
+.interest-tag:hover {
+  background: rgba(var(--primary-color-rgb, 74, 144, 226), 0.2);
+  border-color: var(--primary-color);
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+  .sectionss {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-md);
+  }
+  
+  .article-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  
+  .jsp, .jsp2, .jsp3 {
+    padding: var(--spacing-lg);
+    margin-bottom: var(--spacing-xl);
+  }
+}
+
+@media (max-width: 768px) {
+  #experience {
+    padding: var(--spacing-xl) var(--spacing-md);
+  }
+  
+  .sectionss {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+  
+  .article-container {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+  
+  .jsp, .jsp2, .jsp3 {
+    padding: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  .interests-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-xs);
+  }
+}
+
+@media (max-width: 480px) {
+  .jsp, .jsp2, .jsp3 {
+    padding: var(--spacing-sm);
+  }
+  
+  article {
+    padding: var(--spacing-md);
+  }
+  
+  .interests-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .interest-tag {
+    font-size: 0.875rem;
+    padding: var(--spacing-xs) var(--spacing-sm);
+  }
+}
+
+/* ACCESSIBILITY IMPROVEMENTS */
+@media (prefers-reduced-motion: reduce) {
+  .imagesss img,
+  article,
+  .jsp, .jsp2, .jsp3,
+  .icondivers, .iconmusiques,
+  .skill-card {
+    transition: none;
+  }
+  
+  .imagesss:hover,
+  article:hover,
+  .jsp:hover, .jsp2:hover, .jsp3:hover,
+  .skill-card:hover {
+    transform: none;
+  }
+  
+  .rotating,
+  .icon-hover:hover {
+    animation: none;
+  }
+}
+
+/* Focus states */
+article:focus-within,
+.jsp:focus-within, .jsp2:focus-within, .jsp3:focus-within,
+.skill-card:focus-within {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+.imagesss:focus-within {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 4px;
+}
+
+.icondivers:focus,
+.iconmusiques:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+.interest-tag:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+/* Print styles */
+@media print {
+  article,
+  .jsp, .jsp2, .jsp3,
+  .skill-card {
+    break-inside: avoid;
+    box-shadow: none;
+    border: 1px solid #000;
+    background: white;
+  }
+  
+  .rotating {
+    animation: none;
+  }
+  
+  .interests-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
